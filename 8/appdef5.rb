@@ -1,16 +1,8 @@
 # encoding: utf-8
 def get_command
-x = rand (1..4)
-if 
-	x ==1
-	cmd = :up 
-elsif 	x==2
-	cmd = :left
-elsif 	x ==3
-	cmd = :right
-else 	x ==4
-	cmd = :down			
-end
+	actions = [:up, :left, :right, :down]
+	x = rand (0..3)
+	return actions [x]
 end
 	
 command = get_command
