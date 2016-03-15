@@ -5,7 +5,7 @@ loop do
 	arr.each do |name|
 		x = x + 1
 		puts "№ #{x} is #{name}"
-endы
+	end
 
 
 print "Who will be delete from class? (enter number): "
