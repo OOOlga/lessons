@@ -1,10 +1,10 @@
 arr = %w[Bill Wolt Rebekka Suzi Penny Gorge Jim Laura]
 
 loop do 
-x = 0
-arr.each do |name|
-	x = x + 1
-	puts "№ #{x} is #{name}"
+	x = 0
+	arr.each do |name|
+		x = x + 1
+		puts "№ #{x} is #{name}"
 end
 
 
