@@ -7,10 +7,8 @@ loop do
 		puts "№ #{x} is #{name}"
 	end
 
-
-print "Who will be delete from class? (enter number): "
-del = gets.chomp.to_i
-arr.delete_at del -1 # -1 так как программа будет удалять с нуля, не по списку
-
+	print "Who will be delete from class? (enter number): "
+	del = gets.chomp.to_i
+	arr.delete_at del -1 # -1 так как программа будет удалять с нуля, не по списку
 end
 
