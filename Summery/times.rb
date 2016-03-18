@@ -13,6 +13,7 @@ puts
 	x = 1 # если поместить переменную внутрь цикла. то будет выводить 2 2 2 2 2 
 	print x = x+1, " "
 end
+puts 
 
 1.upto(5) do |i|
 	print i, "--"
@@ -22,4 +23,33 @@ puts
 5.downto(1) do |i|
 	print i, "--"
 end
+puts
 
+x = "x"
+3.times do 
+	print x = x + x, " "
+	3.times do
+		y = "y"
+		print y = y + y, " "
+	end
+end
+puts
+
+x = ""
+10.times do
+	x = x + "!"
+	puts "Hello #{x}"
+end
+
+10.times do |x|
+	print "Hello !"
+	puts "!"*x
+end
+
+10.times do |x|
+	print "Hello !"
+	x.times do 
+		print "!"
+	end
+	puts
+end
