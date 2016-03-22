@@ -1,4 +1,4 @@
-# encoding: cp866
+# encoding: utf-8
 
 money = 100
 

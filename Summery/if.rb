@@ -18,7 +18,7 @@ puts "Поехали!"
 1.upto(x) do |i|
 	n = rand (1..30)
 	puts "#{i} раз выпало #{n}"
-	if n == x
+	if n == win
 		puts "Поздравляем! Вы выиграли с #{i} раза!!!"
 		exit
 	end
