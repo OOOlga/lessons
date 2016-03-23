@@ -1,18 +1,32 @@
-# encoding: utf-8
-print "Играем в камень-ножницы-бумага. Что выбираете вы? "
-answer = gets.strip
-arr = ["ножницы", "камень", "бумага"]
-x = rand (0..2)
+print "Rock (R), Scissors (S), Paper (P): "
+s = gets.strip.capitalize
 
-puts "Копмьютер выбросил #{arr[x]}"
-if answer == "ножницы" && answer == arr[0]
-	puts "Ваши ответы совпали. Переигровка"
-	sleep 1
-	exit
-elsif answer == "ножницы" && answer == arr[1]
-	puts "Вы проиграли"
-elsif answer == "ножницы" && answer == arr[2]
-	puts "Вы выиграли"
-elsif answer == "камень" && answer == arr[0]
-	puts "Вы выиграли"
+if s == "R"
+	user_choice = :rock
+	elsif s == "S"
+	user_choice = :scissors
+	elsif s == "P"
+	user_choice = :paper
+else "Can`t understand what you want.. "
+end
+
+arr = [:rock, :scissors, :paper]
+pc_ch = arr[rand (0..2)]
+puts "Computer`s choice is #{pc_ch}"
+if pc_ch == user_choice
+	print "Noboby wins"
+end
+
+if user_choice == :rock && pc_ch == :scissors
+	puts "You won"
+elsif user_choice == :rock && pc_ch == :paper
+	puts "You lost"
+elsif user_choice == :scissors && pc_ch == :paper
+	puts "You won"	
+elsif user_choice == :scissors && pc_ch == :rock
+	puts "You lost"	
+elsif user_choice == :paper && pc_ch == :scissors
+	puts "You lost"
+elsif user_choice == :paper && pc_ch == :rock
+	puts "You won"
 end
