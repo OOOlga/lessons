@@ -1,5 +1,4 @@
 arr = []
-arr<< arr1
 loop do
 	arr1 = []
 	print "Enter name to add: "
@@ -9,7 +8,7 @@ loop do
 	break if name == ""	
 	arr1 << name
 	arr1 << age
-
+	arr << arr1
 end
 	
 x = 0
