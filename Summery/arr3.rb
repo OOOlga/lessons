@@ -9,6 +9,6 @@ end
 
 x = 0
 arr.each do |name|
-		x +=1
-		puts "#{x} - #{name}"
+	x +=1
+	puts "#{x} - #{name}"
 end
