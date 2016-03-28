@@ -9,7 +9,7 @@ dict = {'dog'=>%w[собака кобель выслеживать],
 loop do 
 	print "Enter world to translate: "
 	world = gets.strip
-	exit if world == ""
+	break if world == ""
 	
 	puts "Количестко переводов: #{dict[world].count}"	
 	puts "Переводы:"
@@ -19,3 +19,16 @@ loop do
 	puts "#{i+1} - #{item}"
 	end
 end
+
+arr = []
+dict.each_value do |value|
+	arr << value	
+end
+arr = arr.flatten
+puts arr.size
+
+x = 0
+dict.each_value do |value|
+	x = x + value.size
+end
+puts x
